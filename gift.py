@@ -14,9 +14,11 @@ def pentagon():
 
 def draw():
     for j in range(8):
-        pentagon()
-        gift.right(135)
         turtle.color("red","blue")
+        turtle.begin_fill()
+        pentagon()
+        turtle.end_fill()
+        gift.right(135)
 
 draw()
 
